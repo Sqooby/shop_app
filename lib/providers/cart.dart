@@ -60,4 +60,9 @@ class Cart with ChangeNotifier {
     _items.remove(productId);
     notifyListeners();
   }
+
+  void clearCard() {
+    _items = {};
+    notifyListeners();
+  }
 }
